@@ -1,3 +1,8 @@
+<?php  
+    $menuItems = getNavigationMenu();
+    $data = getHomepageData(); 
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -62,10 +67,15 @@
             </figure>
             <nav>
                 <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">à propos</a></li>
-                    <li><a href="">Mes projets</a></li>
-                    <li><a href="">Me contacter</a></li>
+                    <?php foreach($menuItems as $item) { ?>  
+                        <li>  
+                            <a href="<?= $item->url ?>">  
+                                <?= $item->title ?>  
+                            </a>  
+                        </li>  
+                    <?php  
+                    }  
+                    ?>
                 </ul>
             </nav>
         </header>
@@ -78,6 +88,12 @@
                     <img src="https://images-ext-1.discordapp.net/external/fS-4AuqYH0J6Fseb1sQVpY3Z6DSk77nM8lSHCEpvhWA/https/www.evinux.org/wp-content/uploads/2021/09/pc-portable-clavier-ecran-lumineux-840x400.jpg" alt="Ordinateur ouvert">
                     <h1></h1>
                 </figure>
+            </section>
+            <section id="about">  
+                <h2><?= $data["a-propos"]["titre"] ?></h2>  
+                <p>  
+                    <?= $data["a-propos"]["contenu"] ?>  
+                </p>  
             </section>
             <section>
                 <h2>Yepfolio en quelques mots</h2>
