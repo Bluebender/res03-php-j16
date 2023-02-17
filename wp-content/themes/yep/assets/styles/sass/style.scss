@@ -1,0 +1,80 @@
+/*!  
+  
+Theme Name: Yep  
+Description: Thème WordPress custom pour Vincent Ollivier  
+Version: 1.0  
+Author: Vincent Ollivier  
+Author URI: https://github.com/Bluebender  
+  
+*/
+@import "reset.scss";
+
+body{
+    > header{
+        width: 100vw;
+        background-color: darkblue;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 10vh;
+        > figure{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >img{
+                height: 80%;
+            }
+        }
+        > nav{
+            display: flex;
+            > ul{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                > li{
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    > a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        > section:nth-of-type(1){
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > h1{
+                color: white;
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: bold;
+                margin: 5vh;
+            }
+            > h2{
+                color: rgb(216, 105, 197);
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+            > figure{
+                width: 100%;
+                > img{
+                    width: 100%;
+                }
+            }
+        }
+        > section:nth-of-type(2){
+            > h2{
+                color: rgb(216, 105, 197);
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+        }
+    }
+}

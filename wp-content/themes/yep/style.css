@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*!  
+
+Theme Name: Yep  
+Description: Thème WordPress custom pour Vincent Ollivier  
+Version: 1.0  
+Author: Vincent Ollivier  
+Author URI: https://github.com/Bluebender  
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body > header {
+  width: 100vw;
+  background-color: darkblue;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 10vh;
+}
+body > header > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > header > figure > img {
+  height: 80%;
+}
+body > header > nav {
+  display: flex;
+}
+body > header > nav > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body > header > nav > ul > li {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+body > header > nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+body main > section:nth-of-type(1) {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main > section:nth-of-type(1) > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 5vh;
+}
+body main > section:nth-of-type(1) > h2 {
+  color: rgb(216, 105, 197);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+body main > section:nth-of-type(1) > figure {
+  width: 100%;
+}
+body main > section:nth-of-type(1) > figure > img {
+  width: 100%;
+}
+body main > section:nth-of-type(2) > h2 {
+  color: rgb(216, 105, 197);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
