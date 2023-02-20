@@ -95,12 +95,29 @@
                     <?= $data["a-propos"]["contenu"] ?>  
                 </p>  
             </section>
-            <section>
+            <!-- <section>
                 <h2>Yepfolio en quelques mots</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus amet molestiae numquam, deserunt possimus! Quas ducimus saepe tempora est atque, molestiae odit quidem rerum magni dolore accusantium ea deleniti quo earum fuga officiis voluptatibus alias error! Quam doloribus adipisci est</p>
                 <p>uod rerum similique quidem voluptatibus architecto eveniet iusto atque.</p>
+            </section> -->
+            <?php
+            echo "<pre>";
+            var_dump($data);
+            echo "</pre>";
+            ?>
+            <section id="projects">
+                <h2>Mes derniers projets</h2>
+                <section>
+                    <?php foreach ($data["projets"] as $projet){ ?>
+                        <article data-img="<?= $projet["image"]["url"] ?>">    
+                            <h3><?= $projet["category"] ?></h3>  
+                            <h4><?= $projet["data"]->post_title ?></h4>
+                        </article>  
+                    <?php } ?>
+                </section>
             </section>
-            <section>
+
+            <!-- <section>
                 <h2>Mes derniers projets</h2>
                 <section>
                     <article>
@@ -124,7 +141,7 @@
                         <h4>Festival des choses</h4>
                     </article>
                 </section>
-            </section>
+            </section> -->
             <section>
                 <h2>Me contacter</h2>
                 <form action="">
@@ -146,5 +163,6 @@
         </main>
 
         <?php wp_footer(); ?>
+    <script src="index.js"></script>
     </body>
 </html>
